@@ -23,7 +23,6 @@ class App extends Component {
             <div>
                 <Header></Header>
                 <NewsList news = {this.state.news}> 
-                Hello world 
                 </NewsList> 
             </div>
 

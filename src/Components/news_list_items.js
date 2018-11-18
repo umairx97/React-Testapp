@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from '../CSS/styles.css';
+import '../CSS/styles.css';
 
 
 // Component that renders the news
@@ -7,10 +7,13 @@ const NewsItem = ({item}) => {
     
     return ( 
 
-        <div>
-            <h3>{item.title}</h3>
+        <div className = "news_item">
+            <h3>
+                {item.title}
+            </h3>
+
             <div> 
-                {item.feed}
+                {item.feed} 
             </div>
         </div> 
             
