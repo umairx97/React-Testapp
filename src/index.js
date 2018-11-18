@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom';
-import JSON from './db.json';
+import JSON from './db';
 
 // Components 
 import Header from './Components/header';
