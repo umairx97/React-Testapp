@@ -12,17 +12,39 @@ class App extends Component {
 
     // A Single state variable that parses JSON 
     state = { 
-        news:JSON
+        news:JSON, 
+        filteredNews:[]
 
     }
 
-    render() {       
+    // Capturing keywords and checking it against items 
+    getKeyword = (event) => { 
+        // console.log(event.target.value);
+        let keyword = event.target.value;
+        let filteredNews = this.state.news.filter((item) => {
+            return item.title.indexOf(keyword) > -1
+
+        });
+        // Setting a new state for the filtered news
+        this.setState({
+            filteredNews
+        })
+
+        // console.log(filteredNews);
+    }
+
+    render() {
+        
+        // Two states for the news 
+        let newsFiltered = this.state.filteredNews;
+        let allnews = this.state.news;       
     return (
+           
 
             // Renders other components such as: Header, NewsList
             <div>
-                <Header></Header>
-                <NewsList news = {this.state.news}> 
+                <Header keywords = {this.getKeyword}></Header>
+                <NewsList news = {this.state.filteredNews.length === 0 ? allnews : newsFiltered}> 
                 </NewsList> 
             </div>
 

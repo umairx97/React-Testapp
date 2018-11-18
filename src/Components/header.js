@@ -1,29 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../CSS/styles.css';
 
 // This is Functional component
-class Header extends Component { 
-
-    // The object that is changing and re-rendering the app
-    
-    
-    state = { 
-        keywords: ''
-    }
-
-
-    // This input handler that detects change
-    inputChangeHandler = (event) => { 
-        this.setState ({  
-            keywords: event.target.value
-        })
-    }
-    
-    render() { 
-
-        
-
-          return (
+const Header = (props) => {     
+           return (
             
                <header> 
                    <div className="logo"> Logo </div>
@@ -31,7 +11,7 @@ class Header extends Component {
                    type="text"
                    
                    //Capturing input and pushing to inpurt handler 
-                   onChange = { this.inputChangeHandler}/>
+                   onChange = { props.keywords }/>
 
             
                </header>
@@ -39,7 +19,7 @@ class Header extends Component {
         )
     }
     
-} 
+ 
 
 // Component Exports
 export default Header;
