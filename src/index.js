@@ -7,7 +7,7 @@ import Header from './Components/header';
 import NewsList from './Components/news_list';
 
 
-// Component class named App 
+//  Main Component class 
 class App extends Component {
 
     // A Single state variable that parses JSON 
@@ -21,7 +21,7 @@ class App extends Component {
     getKeyword = (event) => { 
         // console.log(event.target.value);
         let keyword = event.target.value;
-        let filteredNews = this.state.news.filter((item) => {
+        let filteredNews = this.state.news.filter((item) => { 
             return item.title.indexOf(keyword) > -1
 
         });

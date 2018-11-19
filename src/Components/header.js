@@ -10,7 +10,7 @@ const Header = (props) => {
                    <input 
                    type="text"
                    
-                   //Capturing input and pushing to inpurt handler 
+                   //Capturing input and pushing it to keywords object 
                    onChange = { props.keywords }/>
 
             

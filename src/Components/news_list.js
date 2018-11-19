@@ -23,4 +23,5 @@ const NewsList = (props) => {
 }
 
 
+// Module Exports
 export default NewsList;

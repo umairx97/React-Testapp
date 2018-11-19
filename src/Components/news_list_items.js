@@ -4,7 +4,6 @@ import '../CSS/styles.css';
 
 // Component that renders the news
 const NewsItem = ({item}) => { 
-    
     return ( 
 
         <div className = "news_item">
@@ -20,5 +19,6 @@ const NewsItem = ({item}) => {
     )
 }
  
+// Modules Exports 
 export default NewsItem;
 
