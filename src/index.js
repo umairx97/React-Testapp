@@ -14,7 +14,6 @@ class App extends Component {
     state = { 
         news:JSON, 
         filteredNews:[]
-
     }
 
     // Capturing keywords and checking it against items 
@@ -52,5 +51,5 @@ class App extends Component {
     }
 }
 
-// Renders the whole app 
+// Renders the main component 
 ReactDOM.render( <App/> , document.querySelector('#root'));
