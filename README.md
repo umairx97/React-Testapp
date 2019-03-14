@@ -2,7 +2,6 @@ This project was Created using [Create React App](https://github.com/facebook/cr
 
 ## Available Scripts
 
-
 In the project directory, you can run:
 
 ### `npm start`
